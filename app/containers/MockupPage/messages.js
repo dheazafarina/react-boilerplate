@@ -10,7 +10,7 @@ export const scope = 'boilerplate.containers.MockupPage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'Mockup',
+    defaultMessage: 'Codemi Home',
   },
   scaffoldingHeader: {
     id: `${scope}.scaffolding.header`,

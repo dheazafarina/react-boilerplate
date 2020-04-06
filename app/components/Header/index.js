@@ -1,4 +1,5 @@
 import React from 'react';
+import Data from './data';
 // import { FormattedMessage } from 'react-intl';
 
 import Img from './Img';
@@ -43,6 +44,7 @@ function Header() {
           </div>
         </nav>
       </NavBar>
+      <Data />
     </div>
   );
 }
