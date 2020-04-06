@@ -1,26 +1,47 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
+// import { FormattedMessage } from 'react-intl';
 
-import A from './A';
 import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import Banner from './banner.jpg';
-import messages from './messages';
+import Logo from './codemi.png';
 
 function Header() {
   return (
     <div>
-      <A href="https://www.reactboilerplate.com/">
-        <Img src={Banner} alt="react-boilerplate - Logo" />
-      </A>
       <NavBar>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.home} />
-        </HeaderLink>
-        <HeaderLink to="/features">
-          <FormattedMessage {...messages.features} />
-        </HeaderLink>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <HeaderLink to="/">
+            <Img src={Logo} alt="react-boilerplate - Logo" />
+          </HeaderLink>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="navbar-nav mr-auto" />
+            <form className="form-inline my-2 my-lg-0">
+              <div>
+                <i className="fa fa-bell mr-4" aria-hidden="true" />
+              </div>
+              <div>
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBITLnZ3sR4MT3hvFOlphhQGwfsi8H2OH5EgLzKm6iR5McCZnt&s"
+                  alt="img"
+                  className="img-thumbnail"
+                />
+              </div>
+            </form>
+          </div>
+        </nav>
       </NavBar>
     </div>
   );
