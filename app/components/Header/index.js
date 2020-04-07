@@ -1,6 +1,4 @@
 import React from 'react';
-import Data from './data';
-// import { FormattedMessage } from 'react-intl';
 
 import Img from './Img';
 import NavBar from './NavBar';
@@ -31,7 +29,11 @@ function Header() {
             <div className="navbar-nav mr-auto" />
             <form className="form-inline my-2 my-lg-0">
               <div>
-                <i className="fa fa-bell mr-4" aria-hidden="true" />
+                <i
+                  className="fa fa-bell mr-4"
+                  style={{ fontSize: '22px' }}
+                  aria-hidden="true"
+                />
               </div>
               <div>
                 <img
@@ -44,7 +46,6 @@ function Header() {
           </div>
         </nav>
       </NavBar>
-      <Data />
     </div>
   );
 }

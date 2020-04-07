@@ -41,7 +41,7 @@ export default function App() {
       <Header />
       <div className="container">
         <div className="row">
-          <div className="col-3">
+          <div className="col-3 sidebar">
             <Sidebar />
           </div>
           <div className="col-9">

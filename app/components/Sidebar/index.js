@@ -5,7 +5,9 @@ function Sidebar() {
     <div>
       <ul className="nav flex-column">
         <li className="nav-item">
-          <div>HOME</div>
+          <a className="nav-link" href="/">
+            HOME
+          </a>
         </li>
         <div className="dropdown-divider" />
         <li className="nav-item">
@@ -13,6 +15,9 @@ function Sidebar() {
           <a className="nav-link" href="/">
             <i className="mr-2 fa fa-diamond" aria-hidden="true" />
             Courses
+            <span className="float-right badge badge-danger badge-secondary">
+              21
+            </span>
           </a>
           <a className="nav-link" href="/">
             <i className="mr-2 fa fa-usb" aria-hidden="true" />
