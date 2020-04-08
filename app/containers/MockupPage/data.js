@@ -31,7 +31,9 @@ class Data extends React.Component {
             <thead>
               <tr>
                 <th scope="col">Top Active Page</th>
-                <th scope="col">Active User</th>
+                <th scope="col" className="text-right">
+                  Active User
+                </th>
               </tr>
             </thead>
             <tbody>

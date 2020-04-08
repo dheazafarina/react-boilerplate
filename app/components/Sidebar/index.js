@@ -5,7 +5,7 @@ function Sidebar() {
     <div>
       <ul className="nav flex-column">
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="/mockup">
             HOME
           </a>
         </li>

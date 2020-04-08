@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 import Data from './data';
+// import Chart from './chart';
 
 export default function MockupPage() {
   return (
@@ -23,17 +24,30 @@ export default function MockupPage() {
       <div className="row">
         <div className="col-8">
           <div className="card">
-            <div className="card-header">Featured</div>
-            <div className="card-body">
-              <h5 className="card-title">Special title treatment</h5>
-              <p className="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="/" className="btn btn-primary">
-                Go somewhere
-              </a>
+            <div className="row px-4 py-2">
+              <div className="col-2" style={{ fontSize: '11px' }}>
+                Users
+                <p className="mb-0 font-weight-bold number">58K</p>
+                <p className="text-success">10,2%</p>
+              </div>
+              <div className="col" style={{ fontSize: '11px' }}>
+                Course Completed
+                <p className="mb-0 font-weight-bold number">5,700</p>
+                <p className="text-success">10,2%</p>
+              </div>
+              <div className="col-4" style={{ fontSize: '11px' }}>
+                Learning Plan Completed
+                <p className="mb-0 font-weight-bold number">1,120</p>
+                <p className="text-danger">10,2%</p>
+              </div>
+              <div className="col" style={{ fontSize: '11px' }}>
+                Learning Hour
+                <p className="mb-0 font-weight-bold number">22m 40s</p>
+                <p className="text-success">10,2%</p>
+              </div>
             </div>
+            {/* un-command this line to see chart */}
+            {/* <Chart /> */}
           </div>
         </div>
         <div className="col-4">
